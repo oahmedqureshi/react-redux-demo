@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
-import { addExpense } from './action/addExpense';
-//import { editExpense } from './action/editExpense';
+import { addExpense, addExpenseSync } from './action/addExpense';
+import { editExpense, editExpenseSync } from './action/editExpense';
 import { setText } from './action/setText';
 import { getVisibleExpense } from './selectors';
 
@@ -25,7 +25,9 @@ const FilterTextComponent = (props) => {
 
 class App extends Component {
   componentDidMount(){
-    this.props.dispatch(addExpense({name:'owais',account:21}))
+   // this.props.dispatch(addExpenseSync({name:'owais',account:21}));
+   // this.props.dispatch(editExpenseSync(21, {name:'ahmed', account:25})); 
+   // this.props.dispatch(editExpense({account:24})
   }
 
   render() {
