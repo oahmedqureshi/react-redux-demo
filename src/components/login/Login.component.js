@@ -7,6 +7,7 @@ const Login = () => (
       Home
     </Link>
     My Login Page
+    <button onClick={()=>{console.log("onClick")}}>Login</button>
   </div>
 )
 
