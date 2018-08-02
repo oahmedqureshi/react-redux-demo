@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux'
+
+// routes component
+import Routes from './routes';
 
 // selectors
 import { getVisibleExpense }  from './selectors';
@@ -88,13 +90,10 @@ store.subscribe(()=>{
 
 // store.dispatch(sortByAmount())
 
-
-
-
-
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Routes/>
+    {/* <App /> */}
   </Provider>
 , document.getElementById('root'));
 registerServiceWorker();

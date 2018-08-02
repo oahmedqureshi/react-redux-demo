@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
-import { addExpense, addExpenseSync } from './action/addExpense';
-import { editExpense, editExpenseSync } from './action/editExpense';
-import { setText } from './action/setText';
-import { getVisibleExpense } from './selectors';
+import { addExpense } from '../action/addExpense';
+//import { editExpense } from './action/editExpense';
+import { setText } from '../action/setText';
+import { getVisibleExpense } from '../selectors';
 
 const Item = (props) => {
   return (
